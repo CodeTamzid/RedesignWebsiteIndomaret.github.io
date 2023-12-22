@@ -13,6 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -151,79 +152,69 @@
         </div>
         <div class="navigation">
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
-        </div>
-        <div class="nav m">
-            <label for="radio1" class="m-btn"></label>
-            <label for="radio1" class="m-btn"></label>
-            <label for="radio1" class="m-btn"></label>
-            <label for="radio1" class="m-btn"></label>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 
     <section class="kategori-produk-section">
-        <h2 class="kategori_title">Kategori</h2>
-        <p>Ayo belanja di indomaret sekarang juga banyak pilihan kategori yang tersedia</p>
-        <div class="kategori_container grid-kategori">
-            <div class="background">
-                <h1>Mau belanja banyak promo pastinya <br>hanya di indomaret</h1>
-                <p>belanja di indomaret pasti hemat pasti pas</p>
-                <div class="btn-order">
-                    <a href="">Belanja Sekarang</a>
-                </div>
-                <div class="bg_box"><img
-                        src="https://images.unsplash.com/photo-1652269959545-d40424b665f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""></div>
-            </div>
+        <div class="kategori_container">
+            <img src="assets/img/Cash Payment-rafiki.png" alt="" class="gambar">
+
             <div class="kategori">
-                <div class="kategori_content">
-                    <a href=""><img src="assets/img/cart.png" alt="">
-                        <div class="deskripsi_kategori">
+                <div class="info">
+                    <h1>Mau belanja banyak promo pastinya hanya di indomaret</h1>
+                    <div class="btn-order">
+                        <a href="">Belanja Sekarang</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="kategori_card">
+                        <a href=""><img src="assets/img/cart.png" alt="">
+
                             <h3>Retail</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, inventore?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="kategori_content">
-                    <a href=""><img src="assets/img/light.png" alt="">
-                        <div class="deskripsi_kategori">
+
+                        </a>
+                    </div>
+                    <div class="kategori_card">
+                        <a href=""><img src="assets/img/light.png" alt="">
+
                             <h3>Virtual</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, inventore?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="kategori_content">
-                    <a href=""><img src="assets/img/travel.png" alt="">
-                        <div class="deskripsi_kategori">
+
+                        </a>
+                    </div>
+                    <div class="kategori_card">
+                        <a href=""><img src="assets/img/travel.png" alt="">
+
                             <h3>Travel</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, inventore?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="kategori_content">
-                    <a href=""><img src="assets/img/food.png" alt="">
-                        <div class="deskripsi_kategori">
+
+                        </a>
+                    </div>
+                    <div class="kategori_card">
+                        <a href=""><img src="assets/img/food.png" alt="">
+
                             <h3>Food</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, inventore?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="kategori_content">
-                    <a href=""><img src="assets/img/ticket.png" alt="">
-                        <div class="deskripsi_kategori">
+
+                        </a>
+                    </div>
+                    <div class="kategori_card">
+                        <a href=""><img src="assets/img/ticket.png" alt="">
+
                             <h3>Ticket</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, inventore?</p>
-                        </div>
-                    </a>
+
+                        </a>
+                    </div>
                 </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam est velit itaque quod mollitia
+                    soluta veniam praesentium culpa sapiente minus quas, commodi voluptatum suscipit quam tempore quae
+                    nam reiciendis? Amet, harum doloribus. Ut, nihil!</p>
             </div>
         </div>
     </section>
 
-    <section class="prmosi-produk-section">
+    <section class="swiper mySwiper prmosi-produk-section">
         <h2 class="section_title">Produk dan Promosi Terbaru</h2>
-        <div class="produk_container grid">
-            <div class="produk_content">
+        <div class="swiper-wrapper produk_container">
+            <div class="swiper-slide produk_content">
                 <img src="assets/img/produk1.jpg" alt="">
                 <div class="deskripsi_content">
                     <h1>Pilih CASHBACK atau KASBEK</h1>
@@ -232,7 +223,7 @@
                             class="icon_right"></i></a>
                 </div>
             </div>
-            <div class="produk_content">
+            <div class="swiper-slide produk_content">
                 <img src="assets/img/produk2.jpg" alt="">
                 <div class="deskripsi_content">
                     <h1>CEK DULU STRUK, ada PROMO</h1>
@@ -241,7 +232,7 @@
                             class="icon_right"></i></a>
                 </div>
             </div>
-            <div class="produk_content">
+            <div class="swiper-slide produk_content">
                 <img src="assets/img/produk3.jpg" alt="">
                 <div class="deskripsi_content">
                     <h1>Pilih CASHBACK atau KASBEK</h1>
@@ -250,16 +241,7 @@
                             class="icon_right"></i></a>
                 </div>
             </div>
-            <div class="produk_content">
-                <img src="assets/img/produk6.jpg" alt="">
-                <div class="deskripsi_content">
-                    <h1>Pilih CASHBACK atau KASBEK</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
-                            class="icon_right"></i></a>
-                </div>
-            </div>
-            <div class="produk_content">
+            <div class="swiper-slide produk_content">
                 <img src="assets/img/produk5.jpg" alt="">
                 <div class="deskripsi_content">
                     <h1>Pilih CASHBACK atau KASBEK</h1>
@@ -268,7 +250,54 @@
                             class="icon_right"></i></a>
                 </div>
             </div>
+            <div class="swiper-slide produk_content">
+                <img src="assets/img/produk6.jpg" alt="">
+                <div class="deskripsi_content">
+                    <h1>Pilih CASHBACK atau KASBEK</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
+                            class="icon_right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide produk_content">
+                <img src="assets/img/produk7.jpg" alt="">
+                <div class="deskripsi_content">
+                    <h1>Pilih CASHBACK atau KASBEK</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
+                            class="icon_right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide produk_content">
+                <img src="assets/img/produk8.jpg" alt="">
+                <div class="deskripsi_content">
+                    <h1>Pilih CASHBACK atau KASBEK</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
+                            class="icon_right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide produk_content">
+                <img src="assets/img/produk9.jpg" alt="">
+                <div class="deskripsi_content">
+                    <h1>Pilih CASHBACK atau KASBEK</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
+                            class="icon_right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide produk_content">
+                <img src="assets/img/produk10.jpg" alt="">
+                <div class="deskripsi_content">
+                    <h1>Pilih CASHBACK atau KASBEK</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <a href="" class="btn-read">Lihat Lebih Lanjut<i data-feather="chevron-right"
+                            class="icon_right"></i></a>
+                </div>
+            </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </section>
 
 
@@ -301,7 +330,7 @@
             <h2>Berita</h2>
             <a href="">Berita Lainnya</a>
         </div>
-        <div class="berita_container grid-berita">
+        <div class="berita_container">
             <div class="berita_content">
                 <img src="assets/img/berita1.jpg" alt="">
                 <div class="deskripsi_content">
@@ -371,6 +400,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
